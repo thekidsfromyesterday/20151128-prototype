@@ -738,6 +738,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1964597955}
   - 212: {fileID: 1964597954}
+  - 114: {fileID: 1964597956}
+  - 61: {fileID: 1964597957}
   - 95: {fileID: 1964597953}
   m_Layer: 0
   m_Name: Hero
@@ -755,7 +757,7 @@ Animator:
   m_GameObject: {fileID: 1964597952}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 87317ea9113820c4c9503bde63c7da48, type: 2}
+  m_Controller: {fileID: 9100000, guid: 223441a3921bf7442b4894896819927d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -801,6 +803,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
+--- !u!114 &1964597956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1964597952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70f390fe3c4667545a3c0d62ef076125, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1964597957
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1964597952}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .300000012, y: .589999914}
 --- !u!1 &1993047785
 GameObject:
   m_ObjectHideFlags: 0

@@ -402,7 +402,7 @@ GameObject:
   - 61: {fileID: 890984960}
   m_Layer: 0
   m_Name: Grass-Slider-Background1 (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -560,7 +560,7 @@ GameObject:
   - 61: {fileID: 1784051727}
   m_Layer: 0
   m_Name: Grass-Slider-Background1 (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -630,7 +630,7 @@ GameObject:
   - 61: {fileID: 1877978793}
   m_Layer: 0
   m_Name: Grass-Slider-Background1 (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -645,7 +645,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: -1.93493485}
+  m_Offset: {x: 0, y: -1.93493497}
   serializedVersion: 2
   m_Size: {x: 10.2399998, y: .26013121}
 --- !u!212 &1877978794
@@ -888,7 +888,7 @@ GameObject:
   - 60: {fileID: 1993047786}
   m_Layer: 8
   m_Name: building1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

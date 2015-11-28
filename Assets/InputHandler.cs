@@ -12,10 +12,7 @@ public class InputHandler : MonoBehaviour
     private Rigidbody2D RigidBody { get; set; }
 	private Animator Animator { get; set;}
 
-    private bool IsGrounded
-    {
-        get { return RigidBody.velocity.y.Equals(0); }
-    }
+    private volatile bool _isGrounded;
 
 	// Use this for initialization
 	void Start () {
@@ -39,18 +36,31 @@ public class InputHandler : MonoBehaviour
 
     void Jump()
     {
-        if (Input.GetButton(JumpInput) && IsGrounded)
+        if (Input.GetButton(JumpInput) && _isGrounded && RigidBody.velocity.y.Equals(0))
             RigidBody.velocity += Vector2.up*5;
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag.Contains("Ground"))
+            _isGrounded = false;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log(collision.gameObject.name);
+        if (collision.gameObject.tag.Contains("Ground"))
+            _isGrounded = true;
+    }
+
+    void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag.Contains("Ground"))
+            _isGrounded = true;
     }
 
 	void Animate(float axis)
 	{
-		if (axis == 0) 
+		if (axis.Equals(0)) 
 		{		// Not moving
 			Animator.SetBool("isIdle", true);
 			Animator.SetBool("isMovingLeft", false);
